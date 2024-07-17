@@ -23,23 +23,27 @@ ReferralAlert is a Java-based application designed to monitor Notion databases f
    git clone https://github.com/yourusername/referralAlert.git
    
 2. Navigate to the project directory:
+3. ```sh
    cd referralAlert
    
-3. Install dependencies using Maven:
+4. Install dependencies using Maven:
+   ```sh
    mvn install
 
 
 Configuration
 1. Obtain an integration token from Notion.
 2. Configure the application properties (src/main/resources/application.properties) with your Notion API key and database ID.
+   ```sh
    notion.apiKey=your_notion_api_key
    notion.databaseId=your_notion_database_id
-3. (Optional) Configure the notification service settings based on your preference.
+4. (Optional) Configure the notification service settings based on your preference.
 
 Running the Application
 Execute the following command from the root directory of the project:
+  ```sh
   mvn spring-boot:run
-
+  ```
 Usage
 Once the application is running, it will automatically monitor the specified Notion database for entries with upcoming deadlines and send notifications based on the configured alert system.
 
